@@ -1,0 +1,7 @@
+.row{
+    width: 80%;
+    min-height: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+}

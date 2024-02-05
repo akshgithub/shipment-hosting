@@ -1,0 +1,52 @@
+<h3 style="text-align: center;">What do you want to do?</h3><br>
+
+<form #newForm="ngForm" class="container border p-3 rounded-3">
+    <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-light">
+            <span class="fs-3">Shipment Search</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" id="order" placeholder="Order #" >
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" id="shipment" placeholder="Shipment #" >
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" id="firstname" placeholder="First Name" >
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" id="lastname" placeholder="Last Name" >
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" id="email" placeholder="Email ID" >
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number" >
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-3 offset-3">
+            <div class="d-grid">
+                <button type="reset" (click)="resetForm(newForm)" class="btn btn-primary">Reset</button>
+            </div>
+        </div>
+        <div class="col-3 offset-3">
+            <div class="d-grid">
+                <button type="text" [routerLink]="['/shipment']" routerLinkActive="router-link-active" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </div><br>
+    
+</form>

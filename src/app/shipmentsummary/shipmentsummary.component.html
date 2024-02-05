@@ -1,0 +1,81 @@
+<form #newForm="ngForm" class="container border p-3 rounded-3">
+    <div class="row g-0">
+        <div class="col p-1 mb-3">
+            <span class="fs-3">Shipment Summary</span>
+            <h6>LOWSHP004</h6>
+        </div>
+        <div class="col-1 offset-1">
+            <div >
+                <button [routerLink]="['/home']" routerLinkActive="router-link-active" type="button"  
+                class="btn btn-outline-info">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="container" style="background-color: gainsboro;"><br>
+        <h6 style="color: purple;">Packing in Progress</h6>
+        <table class="container" style="background-color: gainsboro;">
+            <th>
+                <tr class="p-1">
+
+                    <h6>Shipment number<br>LOWSHP004SHPNO</h6>
+                    <h6>Carrier<br>UPSNGround</h6>
+                    <h6>Assigned to<br>Matrix Store 1 Manager</h6>
+                    <h6>Ship to<br>Abby Doyle<br>6849<br>Wolfe Road<br>Sunnudale, CA, 94049<br>US</h6>
+                </tr>
+            </th>
+            <th>
+                <tr>
+                    <h6>Expected ship date<br>Jun 5,2018</h6><br>
+                    <h6>Customer info<br>Abby Dolye<br>123456789<br>adoyle@example.com</h6><br>
+                    <h6>Bill to<br>Abby Doyle<br>6849<br>Wolfe Road<br>Sunnudale, CA, 94049<br>US</h6><br><br>
+                </tr>
+            </th>
+        </table>
+    </div>
+    <hr>
+    <h6 style="color: rgb(21, 167, 167);">Products (3)</h6>
+    <hr>
+
+    <table class="container">
+        <div class="row">
+            <div class="left">
+                <img src="./assets/images/irobo.jpg" alt="irobo">
+            </div>
+            <div class="right">
+                <h5 style="color: rgb(21, 167, 167);">iRobot roomba 980 Robotic Vacum</h5>
+                <h6>Product ID: 1000900</h6>
+                <h6>Quality: 1 Each</h6>
+            </div>
+        </div>
+
+        <th>
+            <div class="row">
+                <div class="left">
+                    <img src="./assets/images/fan.jpg" alt="fan">
+                </div>
+                <div class="right">
+                    <h5 style="color: rgb(21, 167, 167);">iRobot roomba 980 Robotic Vacum</h5>
+                    <h6>Product ID: 1000900</h6>
+                    <h6>Quality: 1 Each</h6>
+                </div>
+            </div>
+        </th>
+    </table>
+    <hr>
+
+    <table>
+        <div class="row">
+            <div class="left">
+                <img src="./assets/images/air.jpg" alt="air">
+            </div>
+            <div class="right">
+                <h5 style="color: rgb(21, 167, 167);">iRobot roomba 980 Robotic Vacum</h5>
+                <h6>Product ID: 1000900</h6>
+                <h6>Quality: 1 Each</h6>
+            </div>
+        </div>
+    </table>
+
+</form>
